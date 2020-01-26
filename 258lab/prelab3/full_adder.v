@@ -1,0 +1,64 @@
+module ripple_carry_adder(LEDR, SW);
+    output [9:0] LEDR;
+    input [9:0] SW;
+
+    adder m1(
+        .S(LEDR[3:0]),
+        .cout(LEDR[4]),		  
+        .A(SW[3:0]),
+		  .B(SW[7:4]),
+        .cin(SW[8])
+        );
+        
+endmodule
+
+module adder(S, cout, A, B, cin);
+    output [3:0] S;
+	 output cout;
+    input [3:0] A;
+	 input [3:0] B;
+    input cin;
+	 
+	 wire c1, c2, c3;
+	 
+	 full_adder a0(
+			.cin(cin),
+			.a(A[0]),
+			.b(B[0]),
+			.s(S[0]),
+			.cout(c1)
+	 );
+	 
+	 full_adder a1(
+			.cin(c1),
+			.a(A[1]),
+			.b(B[1]),
+			.s(S[1]),
+			.cout(c2)
+	 );
+	 
+	 full_adder a2(
+			.cin(c2),
+			.a(A[2]),
+			.b(B[2]),
+			.s(S[2]),
+			.cout(c3)
+	 );
+	 
+	 full_adder a3(
+			.cin(c3),
+			.a(A[3]),
+			.b(B[3]),
+			.s(S[3]),
+			.cout(cout)
+	 );	 
+endmodule
+
+module full_adder(cin, a, b, s, cout);
+    input cin, a, b;
+	 output s, cout;
+	 
+	 assign s = a ^ b ^ cin;
+	 assign cout = a & b | (a ^ b) & cin;
+        
+endmodule

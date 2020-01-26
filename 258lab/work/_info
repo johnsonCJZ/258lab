@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/u13/c6/01/zhaoch27/Desktop/258lab
+vhex
+!s110 1579383844
+!i10b 1
+!s100 V4m5f7eFH2[J<SSmSIi^;1
+I7g3I]IZK3[B1iWJY8X:h11
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1579383659
+8prelab2part3.v
+Fprelab2part3.v
+L0 6
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1579383844.000000
+!s107 prelab2part3.v|
+!s90 -reportprogress|300|-timescale|1ns/1ns|prelab2part3.v|
+!i113 1
+Z3 o-timescale 1ns/1ns
+Z4 tCvgOpt 0
+vhexdisplay
+Z5 !s110 1579383089
+!i10b 1
+!s100 Me<[j3==Eg@oP46z:2I8m3
+I;<Mh]0io@=L<VN4V5i@Sg2
+R1
+R0
+Z6 w1579383042
+Z7 8prelab2.v
+Z8 Fprelab2.v
+L0 41
+R2
+r1
+!s85 0
+31
+Z9 !s108 1579383089.000000
+Z10 !s107 prelab2.v|
+Z11 !s90 -reportprogress|300|-timescale|1ns/1ns|prelab2.v|
+!i113 1
+R3
+R4
+vmux
+R5
+!i10b 1
+!s100 M6haPK@zkU;YeJlkzHWAF3
+IjD>hSHFiiDfg2QzJdQ>3Z3
+R1
+R0
+R6
+R7
+R8
+L0 1
+R2
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R3
+R4
+vmux2to1
+R5
+!i10b 1
+!s100 MjH:A_9FoUiz8Z2AanH=e1
+I6=Gh^KLC_9mjjJ:=Yz>hA1
+R1
+R0
+R6
+R7
+R8
+L0 29
+R2
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R3
+R4
